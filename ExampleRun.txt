@@ -1,0 +1,243 @@
+mika@mika-ThinkCentre-M710q:~/GIT_REPORT/QtPasswordGenerator/QtPasswordGenerator/build/Desktop_Qt_5_15_1_GCC_64bit-Release$ ./createApp.sh 
+Qt5 app --> LinuxApp creation
+
+1) This tool requires creation of cQtDeployer package first in Qt5 QtCreator Release directory
+Example usage: cqtdeployer -bin QtPasswordGenerator -qmake /home/mika/Qt/5.15.1/gcc_64/bin/qmake 
+(see https://wiki.qt.io/CQtDeployer)
+
+  cd into ...<YourQtApp>/build/Desktop_Qt_5_15_1_GCC_64bit-Release$
+  -bin <Qt5 Release variant binary name>
+  -qmake <path where qmake installation is
+  let default DistributionKit directory to be generated in ...Release directory
+
+DistributionKit directory must have Linux App Icon file (<LinuxAppName>.png.
+
+2) Create Linux AppImage package using appimagetool.
+(Dowload: wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage chmod +x appimagetool-x86_64.AppImage)
+Execute tool: ./appimagetool-x86_64.AppImage >LinuxAppName>
+
+Tested on Ubuntu 20,21. Ubuntu may require installation of  libxcb-xinerama0
+
+Runnable LinuxApp will be in ...Release directory named as: <QtAppName>-x86_64.Appimage
+
+
+These are script defined directories:
+
+Qt5 Release variant app name: QtPasswordGenerator
+LinuxApp worktime name:       MyTest
+Qt5 cQtDeployer target as source: ./DistributionKit
+Linux App work directory:     ./MyTest
+Linux app to be named:        QtPasswordGenerator-x86_64.Appimage
+
+Do you want to continue? (y/n): y
+Source directory found: ./DistributionKit
+ERROR: directory ./MyTest  exists
+mika@mika-ThinkCentre-M710q:~/GIT_REPORT/QtPasswordGenerator/QtPasswordGenerator/build/Desktop_Qt_5_15_1_GCC_64bit-Release$ rm -rf ./MyTest
+mika@mika-ThinkCentre-M710q:~/GIT_REPORT/QtPasswordGenerator/QtPasswordGenerator/build/Desktop_Qt_5_15_1_GCC_64bit-Release$ ./createApp.sh 
+Qt5 app --> LinuxApp creation
+
+1) This tool requires creation of cQtDeployer package first in Qt5 QtCreator Release directory
+Example usage: cqtdeployer -bin QtPasswordGenerator -qmake /home/mika/Qt/5.15.1/gcc_64/bin/qmake 
+(see https://wiki.qt.io/CQtDeployer)
+
+  cd into ...<YourQtApp>/build/Desktop_Qt_5_15_1_GCC_64bit-Release$
+  -bin <Qt5 Release variant binary name>
+  -qmake <path where qmake installation is
+  let default DistributionKit directory to be generated in ...Release directory
+
+DistributionKit directory must have Linux App Icon file (<LinuxAppName>.png.
+
+2) Create Linux AppImage package using appimagetool.
+(Dowload: wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage chmod +x appimagetool-x86_64.AppImage)
+Execute tool: ./appimagetool-x86_64.AppImage >LinuxAppName>
+
+Tested on Ubuntu 20,21. Ubuntu may require installation of  libxcb-xinerama0
+
+Runnable LinuxApp will be in ...Release directory named as: <QtAppName>-x86_64.Appimage
+
+
+These are script defined directories:
+
+Qt5 Release variant app name: QtPasswordGenerator
+LinuxApp worktime name:       MyTest
+Qt5 cQtDeployer target as source: ./DistributionKit
+Linux App work directory:     ./MyTest
+Linux app to be named:        QtPasswordGenerator-x86_64.Appimage
+
+Do you want to continue? (y/n): y
+Source directory found: ./DistributionKit
+Created Linux App needed directories ./MyTest -->  bin,lib,plugins,qml,translations
+Found application image file: ./DistributionKit/MyTest.png , copying to ./MyTest/MyTest.png
+'./DistributionKit/MyTest.png' -> './MyTest/MyTest.png'
+'./DistributionKit/lib/libicudata.so.56' -> './MyTest/lib/libicudata.so.56'
+'./DistributionKit/lib/libicui18n.so.56' -> './MyTest/lib/libicui18n.so.56'
+'./DistributionKit/lib/libicuuc.so.56' -> './MyTest/lib/libicuuc.so.56'
+'./DistributionKit/lib/libQt5Core.so.5' -> './MyTest/lib/libQt5Core.so.5'
+'./DistributionKit/lib/libQt5DBus.so.5' -> './MyTest/lib/libQt5DBus.so.5'
+'./DistributionKit/lib/libQt5EglFSDeviceIntegration.so.5' -> './MyTest/lib/libQt5EglFSDeviceIntegration.so.5'
+'./DistributionKit/lib/libQt5Gui.so.5' -> './MyTest/lib/libQt5Gui.so.5'
+'./DistributionKit/lib/libQt5Svg.so.5' -> './MyTest/lib/libQt5Svg.so.5'
+'./DistributionKit/lib/libQt5WaylandClient.so.5' -> './MyTest/lib/libQt5WaylandClient.so.5'
+'./DistributionKit/lib/libQt5Widgets.so.5' -> './MyTest/lib/libQt5Widgets.so.5'
+'./DistributionKit/lib/libQt5XcbQpa.so.5' -> './MyTest/lib/libQt5XcbQpa.so.5'
+'./DistributionKit/lib/libxcb-xinerama.so.0' -> './MyTest/lib/libxcb-xinerama.so.0'
+'./DistributionKit/plugins/iconengines' -> './MyTest/plugins/iconengines'
+'./DistributionKit/plugins/iconengines/libqsvgicon.so' -> './MyTest/plugins/iconengines/libqsvgicon.so'
+'./DistributionKit/plugins/imageformats' -> './MyTest/plugins/imageformats'
+'./DistributionKit/plugins/imageformats/libqgif.so' -> './MyTest/plugins/imageformats/libqgif.so'
+'./DistributionKit/plugins/imageformats/libqicns.so' -> './MyTest/plugins/imageformats/libqicns.so'
+'./DistributionKit/plugins/imageformats/libqico.so' -> './MyTest/plugins/imageformats/libqico.so'
+'./DistributionKit/plugins/imageformats/libqjpeg.so' -> './MyTest/plugins/imageformats/libqjpeg.so'
+'./DistributionKit/plugins/imageformats/libqsvg.so' -> './MyTest/plugins/imageformats/libqsvg.so'
+'./DistributionKit/plugins/imageformats/libqtga.so' -> './MyTest/plugins/imageformats/libqtga.so'
+'./DistributionKit/plugins/imageformats/libqtiff.so' -> './MyTest/plugins/imageformats/libqtiff.so'
+'./DistributionKit/plugins/imageformats/libqwbmp.so' -> './MyTest/plugins/imageformats/libqwbmp.so'
+'./DistributionKit/plugins/imageformats/libqwebp.so' -> './MyTest/plugins/imageformats/libqwebp.so'
+'./DistributionKit/plugins/platforminputcontexts' -> './MyTest/plugins/platforminputcontexts'
+'./DistributionKit/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so' -> './MyTest/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so'
+'./DistributionKit/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so' -> './MyTest/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so'
+'./DistributionKit/plugins/platforms' -> './MyTest/plugins/platforms'
+'./DistributionKit/plugins/platforms/libqeglfs.so' -> './MyTest/plugins/platforms/libqeglfs.so'
+'./DistributionKit/plugins/platforms/libqlinuxfb.so' -> './MyTest/plugins/platforms/libqlinuxfb.so'
+'./DistributionKit/plugins/platforms/libqminimal.so' -> './MyTest/plugins/platforms/libqminimal.so'
+'./DistributionKit/plugins/platforms/libqminimalegl.so' -> './MyTest/plugins/platforms/libqminimalegl.so'
+'./DistributionKit/plugins/platforms/libqoffscreen.so' -> './MyTest/plugins/platforms/libqoffscreen.so'
+'./DistributionKit/plugins/platforms/libqwayland-egl.so' -> './MyTest/plugins/platforms/libqwayland-egl.so'
+'./DistributionKit/plugins/platforms/libqwayland-generic.so' -> './MyTest/plugins/platforms/libqwayland-generic.so'
+'./DistributionKit/plugins/platforms/libqwayland-xcomposite-egl.so' -> './MyTest/plugins/platforms/libqwayland-xcomposite-egl.so'
+'./DistributionKit/plugins/platforms/libqwayland-xcomposite-glx.so' -> './MyTest/plugins/platforms/libqwayland-xcomposite-glx.so'
+'./DistributionKit/plugins/platforms/libqxcb.so' -> './MyTest/plugins/platforms/libqxcb.so'
+'./DistributionKit/plugins/platformthemes' -> './MyTest/plugins/platformthemes'
+'./DistributionKit/plugins/platformthemes/libqgtk3.so' -> './MyTest/plugins/platformthemes/libqgtk3.so'
+'./DistributionKit/plugins/platformthemes/libqxdgdesktopportal.so' -> './MyTest/plugins/platformthemes/libqxdgdesktopportal.so'
+'./DistributionKit/plugins/wayland-decoration-client' -> './MyTest/plugins/wayland-decoration-client'
+'./DistributionKit/plugins/wayland-decoration-client/libbradient.so' -> './MyTest/plugins/wayland-decoration-client/libbradient.so'
+'./DistributionKit/plugins/wayland-graphics-integration-client' -> './MyTest/plugins/wayland-graphics-integration-client'
+'./DistributionKit/plugins/wayland-graphics-integration-client/libdmabuf-server.so' -> './MyTest/plugins/wayland-graphics-integration-client/libdmabuf-server.so'
+'./DistributionKit/plugins/wayland-graphics-integration-client/libdrm-egl-server.so' -> './MyTest/plugins/wayland-graphics-integration-client/libdrm-egl-server.so'
+'./DistributionKit/plugins/wayland-graphics-integration-client/libqt-plugin-wayland-egl.so' -> './MyTest/plugins/wayland-graphics-integration-client/libqt-plugin-wayland-egl.so'
+'./DistributionKit/plugins/wayland-graphics-integration-client/libshm-emulation-server.so' -> './MyTest/plugins/wayland-graphics-integration-client/libshm-emulation-server.so'
+'./DistributionKit/plugins/wayland-graphics-integration-client/libvulkan-server.so' -> './MyTest/plugins/wayland-graphics-integration-client/libvulkan-server.so'
+'./DistributionKit/plugins/wayland-graphics-integration-client/libxcomposite-egl.so' -> './MyTest/plugins/wayland-graphics-integration-client/libxcomposite-egl.so'
+'./DistributionKit/plugins/wayland-graphics-integration-client/libxcomposite-glx.so' -> './MyTest/plugins/wayland-graphics-integration-client/libxcomposite-glx.so'
+'./DistributionKit/plugins/wayland-shell-integration' -> './MyTest/plugins/wayland-shell-integration'
+'./DistributionKit/plugins/wayland-shell-integration/libfullscreen-shell-v1.so' -> './MyTest/plugins/wayland-shell-integration/libfullscreen-shell-v1.so'
+'./DistributionKit/plugins/wayland-shell-integration/libivi-shell.so' -> './MyTest/plugins/wayland-shell-integration/libivi-shell.so'
+'./DistributionKit/plugins/wayland-shell-integration/libwl-shell.so' -> './MyTest/plugins/wayland-shell-integration/libwl-shell.so'
+'./DistributionKit/plugins/wayland-shell-integration/libxdg-shell-v5.so' -> './MyTest/plugins/wayland-shell-integration/libxdg-shell-v5.so'
+'./DistributionKit/plugins/wayland-shell-integration/libxdg-shell-v6.so' -> './MyTest/plugins/wayland-shell-integration/libxdg-shell-v6.so'
+'./DistributionKit/plugins/wayland-shell-integration/libxdg-shell.so' -> './MyTest/plugins/wayland-shell-integration/libxdg-shell.so'
+'./DistributionKit/plugins/xcbglintegrations' -> './MyTest/plugins/xcbglintegrations'
+'./DistributionKit/plugins/xcbglintegrations/libqxcb-egl-integration.so' -> './MyTest/plugins/xcbglintegrations/libqxcb-egl-integration.so'
+'./DistributionKit/plugins/xcbglintegrations/libqxcb-glx-integration.so' -> './MyTest/plugins/xcbglintegrations/libqxcb-glx-integration.so'
+'./DistributionKit/translations/qtbase_ar.qm' -> './MyTest/translations/qtbase_ar.qm'
+'./DistributionKit/translations/qtbase_bg.qm' -> './MyTest/translations/qtbase_bg.qm'
+'./DistributionKit/translations/qtbase_ca.qm' -> './MyTest/translations/qtbase_ca.qm'
+'./DistributionKit/translations/qtbase_cs.qm' -> './MyTest/translations/qtbase_cs.qm'
+'./DistributionKit/translations/qtbase_da.qm' -> './MyTest/translations/qtbase_da.qm'
+'./DistributionKit/translations/qtbase_de.qm' -> './MyTest/translations/qtbase_de.qm'
+'./DistributionKit/translations/qtbase_en.qm' -> './MyTest/translations/qtbase_en.qm'
+'./DistributionKit/translations/qtbase_es.qm' -> './MyTest/translations/qtbase_es.qm'
+'./DistributionKit/translations/qtbase_fi.qm' -> './MyTest/translations/qtbase_fi.qm'
+'./DistributionKit/translations/qtbase_fr.qm' -> './MyTest/translations/qtbase_fr.qm'
+'./DistributionKit/translations/qtbase_gd.qm' -> './MyTest/translations/qtbase_gd.qm'
+'./DistributionKit/translations/qtbase_he.qm' -> './MyTest/translations/qtbase_he.qm'
+'./DistributionKit/translations/qtbase_hu.qm' -> './MyTest/translations/qtbase_hu.qm'
+'./DistributionKit/translations/qtbase_it.qm' -> './MyTest/translations/qtbase_it.qm'
+'./DistributionKit/translations/qtbase_ja.qm' -> './MyTest/translations/qtbase_ja.qm'
+'./DistributionKit/translations/qtbase_ko.qm' -> './MyTest/translations/qtbase_ko.qm'
+'./DistributionKit/translations/qtbase_lv.qm' -> './MyTest/translations/qtbase_lv.qm'
+'./DistributionKit/translations/qtbase_pl.qm' -> './MyTest/translations/qtbase_pl.qm'
+'./DistributionKit/translations/qtbase_ru.qm' -> './MyTest/translations/qtbase_ru.qm'
+'./DistributionKit/translations/qtbase_sk.qm' -> './MyTest/translations/qtbase_sk.qm'
+'./DistributionKit/translations/qtbase_tr.qm' -> './MyTest/translations/qtbase_tr.qm'
+'./DistributionKit/translations/qtbase_uk.qm' -> './MyTest/translations/qtbase_uk.qm'
+'./DistributionKit/translations/qtbase_zh_TW.qm' -> './MyTest/translations/qtbase_zh_TW.qm'
+Creating script ./MyTest/AppRun
+Creating script ./MyTest/launcher.sh
+Creating desktop file ./MyTest/MyTest.desktop
+Finding missing libraries ./MyTest/bin/QtPasswordGenerator
+	linux-vdso.so.1 (0x00007ffc974e4000)
+	libQt5Widgets.so.5 => /home/mika/Qt/5.15.1/gcc_64/lib/libQt5Widgets.so.5 (0x00007fc31a800000)
+	libQt5Gui.so.5 => /home/mika/Qt/5.15.1/gcc_64/lib/libQt5Gui.so.5 (0x00007fc319e00000)
+	libQt5Core.so.5 => /home/mika/Qt/5.15.1/gcc_64/lib/libQt5Core.so.5 (0x00007fc319600000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fc3193d4000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fc31a7c6000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fc3191ab000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fc31b066000)
+	libGL.so.1 => /lib/x86_64-linux-gnu/libGL.so.1 (0x00007fc31a73f000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fc3190c4000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007fc3190a8000)
+	libicui18n.so.56 => /home/mika/Qt/5.15.1/gcc_64/lib/libicui18n.so.56 (0x00007fc318c00000)
+	libicuuc.so.56 => /home/mika/Qt/5.15.1/gcc_64/lib/libicuuc.so.56 (0x00007fc318800000)
+	libicudata.so.56 => /home/mika/Qt/5.15.1/gcc_64/lib/libicudata.so.56 (0x00007fc316e00000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fc31a73a000)
+	libgthread-2.0.so.0 => /lib/x86_64-linux-gnu/libgthread-2.0.so.0 (0x00007fc31a735000)
+	libglib-2.0.so.0 => /lib/x86_64-linux-gnu/libglib-2.0.so.0 (0x00007fc316cc6000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fc31b079000)
+	libGLdispatch.so.0 => /lib/x86_64-linux-gnu/libGLdispatch.so.0 (0x00007fc316c0e000)
+	libGLX.so.0 => /lib/x86_64-linux-gnu/libGLX.so.0 (0x00007fc318bcc000)
+	libpcre.so.3 => /lib/x86_64-linux-gnu/libpcre.so.3 (0x00007fc316b98000)
+	libX11.so.6 => /lib/x86_64-linux-gnu/libX11.so.6 (0x00007fc316a58000)
+	libxcb.so.1 => /lib/x86_64-linux-gnu/libxcb.so.1 (0x00007fc316a2e000)
+	libXau.so.6 => /lib/x86_64-linux-gnu/libXau.so.6 (0x00007fc319dfa000)
+	libXdmcp.so.6 => /lib/x86_64-linux-gnu/libXdmcp.so.6 (0x00007fc3190a0000)
+	libbsd.so.0 => /lib/x86_64-linux-gnu/libbsd.so.0 (0x00007fc3187e8000)
+	libmd.so.0 => /lib/x86_64-linux-gnu/libmd.so.0 (0x00007fc318bbf000)
+----------------------------------------------------------------------------------------
+All done! Now you can proceed to create the Linux tAppImage package using appimagetool.
+
+Fetch tool: wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage chmod +x appimagetool-x86_64.AppImage
+
+Execute tool: ./appimagetool-x86_64.AppImage MyTest
+----------------------------------------------------------------------------------------
+mika@mika-ThinkCentre-M710q:~/GIT_REPORT/QtPasswordGenerator/QtPasswordGenerator/build/Desktop_Qt_5_15_1_GCC_64bit-Release$ ./appimagetool-x86_64.AppImage MyTest
+appimagetool, continuous build (commit 5735cc5), build <local dev build> built on 2023-03-08 22:52:04 UTC
+Using architecture x86_64
+/home/mika/GIT_REPORT/QtPasswordGenerator/QtPasswordGenerator/build/Desktop_Qt_5_15_1_GCC_64bit-Release/MyTest should be packaged as QtPasswordGenerator-x86_64.AppImage
+Deleting pre-existing .DirIcon
+Creating .DirIcon symlink based on information from desktop file
+WARNING: AppStream upstream metadata is missing, please consider creating it
+         in usr/share/metainfo/MyTest.appdata.xml
+         Please see https://www.freedesktop.org/software/appstream/docs/chap-Quickstart.html#sect-Quickstart-DesktopApps
+         for more information or use the generator at http://output.jsbin.com/qoqukof.
+Generating squashfs...
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on QtPasswordGenerator-x86_64.AppImage, block size 131072.
+[=================================================================================================================================================\] 528/528 100%
+
+Exportable Squashfs 4.0 filesystem, gzip compressed, data block size 131072
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 24178.79 Kbytes (23.61 Mbytes)
+	39.78% of uncompressed filesystem size (60774.49 Kbytes)
+Inode table size 2479 bytes (2.42 Kbytes)
+	49.34% of uncompressed inode table size (5024 bytes)
+Directory table size 1148 bytes (1.12 Kbytes)
+	47.62% of uncompressed directory table size (2411 bytes)
+Number of duplicate files found 0
+Number of inodes 96
+Number of files 80
+Number of fragments 17
+Number of symbolic links  1
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 15
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)
+Embedding ELF...
+Marking the AppImage as executable...
+Embedding MD5 digest
+Success
+
+Please consider submitting your AppImage to AppImageHub, the crowd-sourced
+central directory of available AppImages, by opening a pull request
+at https://github.com/AppImage/appimage.github.io
+mika@mika-ThinkCentre-M710q:~/GIT_REPORT/QtPasswordGenerator/QtPasswordGenerator/build/Desktop_Qt_5_15_1_GCC_64bit-Release$ 
+
+
